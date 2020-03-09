@@ -73,6 +73,11 @@ nav> ul > li:hover {
   justify-self: center;
    
 }
+
+.templos {
+  width:480px; 
+  height:470px;
+}
 main {
   font-family: helvetica, cursive;
   display: grid;
