@@ -2,6 +2,7 @@
   font-family: 'Under Authority';
   src: url(res/UnderAuthority.ttf);
 }
+
 body {
   background-repeat: no-repeat;
   background-size: cover;
@@ -24,7 +25,8 @@ body {
   width: 90%;
   margin-bottom: 20px;
 }
-header {
+.header {
+  text-align: center;
   
  
 }
@@ -35,7 +37,7 @@ header > img {
 
 }
 
-#box-container {
+.menu {
   display: flex;
   list-style: none;
   font-family: 'Special Elite', cursive;
@@ -101,14 +103,6 @@ main {
 a {
   text-decoration: none;
   color: #000;  
-}
-
-a > li {
-  color: rgb(39, 2, 126);
-  text-align: center;
-  background-color: rgba(25, 155, 155, 0);
-  margin: 5px 0;
-  width: 50%;
 }
 
 .info {
@@ -238,6 +232,63 @@ a > li {
 }
 
 footer {
-  background: rgba(211, 211, 211, 0.411);
+  background: rgba(201, 211, 233, 0.678);
   font-weight: 600;
+}
+label {
+  margin: 0 40px 0 5px;
+  font-size: 26px;
+  line-height: 70px;
+  display: none;
+  width: 26px;
+  background: rgba(201, 211, 233, 0.678);
+  border-radius: 20px;
+  padding: 0 10px;
+}
+#toggle {
+  display: none;
+}
+
+@media (max-width:800px) {
+  label {
+    display: block;
+  }
+  .menu {
+    text-align: center;
+    width: 80%;
+    display: none;
+  }
+  .menu li {
+    display: block;
+    margin: 0;
+    width: 100%;
+  }
+  #toggle:checked + .menu {
+    display: block;
+  }
+
+  .headlogo {}
+  #skjold {display:none;}
+  nav {
+    
+    
+  }
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    grid-template-areas:
+      "info info"
+      "kalender kalender";
+    
+
+    }
+    .info{
+      grid-area: info;
+    }
+    .kalender{
+      grid-area: kalender;
+    }
+  footer {}
+  .galleri {display:none;}
 }
