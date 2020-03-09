@@ -108,7 +108,7 @@ a {
 .info {
   background: rgba(201, 211, 233, 0.678);
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto auto;
   grid-template-rows: auto auto auto auto;
   grid-area: info;
   font-size: large;
@@ -275,11 +275,12 @@ label {
   }
   main {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 2fr 1fr;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
     grid-template-areas:
       "info info"
       "kalender kalender";
+    row-gap: 5px;
     
 
     }
